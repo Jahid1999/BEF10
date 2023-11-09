@@ -20,7 +20,7 @@
 
     <!-- Icon Font Stylesheet -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       rel="stylesheet"
     />
     <link
@@ -79,7 +79,7 @@
               >
                 <img
                   class="rounded-circle me-lg-2"
-                  src="img/user.jpg"
+                  src="img/jahid.jpg"
                   alt=""
                   style="width: 40px; height: 40px"
                 />
@@ -104,7 +104,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-money-bill fa-3x text-primary"></i>
+                <i class="fa fa-money-bills fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Total Collection</p>
                   <h6 class="mb-0">৳ 10,750</h6>
@@ -137,7 +137,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-user fa-3x text-primary"></i>
+                <i class="fa fa-user-group fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Contributors Last Month</p>
                   <h6 class="mb-0">11</h6>
@@ -150,7 +150,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-money-bill fa-3x text-primary"></i>
+                <i class="fa fa-hand-holding-dollar fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Loan Disbursed</p>
                   <h6 class="mb-0">৳ 10,000</h6>
@@ -161,7 +161,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-user fa-3x text-primary"></i>
+                <i class="fa fa-users-viewfinder fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Loan Collectors</p>
                   <h6 class="mb-0">2</h6>
@@ -173,7 +173,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-money-bill fa-3x text-primary"></i>
+                <i class="fa fa-hand-holding-heart fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Grant</p>
                   <h6 class="mb-0">৳ 10,000</h6>
@@ -184,7 +184,7 @@
               <div
                 class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 custom-hover-effect custom-shadow"
               >
-                <i class="fa fa-user fa-3x text-primary"></i>
+                <i class="fa fa-users-between-lines fa-3x text-primary"></i>
                 <div class="ms-3">
                   <p class="mb-2">Grant Collectors</p>
                   <h6 class="mb-0">2</h6>
@@ -197,24 +197,20 @@
 
         <!-- Sales Chart Start -->
         <div class="container-fluid pt-4">
-          <div class="row g-4">
+          <div class="row g-4 mb-4">
             <div class="col-sm-12 col-xl-6">
-              <div
-                class="bg-secondary text-center rounded p-4 custom-hover-effect custom-shadow"
-              >
+              <div class="bg-secondary text-center rounded p-4 custom-shadow">
                 <div
                   class="d-flex align-items-center justify-content-between mb-4"
                 >
                   <h6 class="mb-0">Contribution 2023</h6>
                   <i class="fa fa-money-bill text-primary"></i>
                 </div>
-                <canvas id="worldwide-sales"></canvas>
+                <canvas id="contributions"></canvas>
               </div>
             </div>
             <div class="col-sm-12 col-xl-6">
-              <div
-                class="bg-secondary text-center rounded p-4 custom-hover-effect custom-shadow"
-              >
+              <div class="bg-secondary text-center rounded p-4 custom-shadow">
                 <div
                   class="d-flex align-items-center justify-content-between mb-4"
                 >
@@ -224,18 +220,31 @@
                 <canvas id="contributors"></canvas>
               </div>
             </div>
+          </div>
 
-            <!-- <div class="col-sm-12 col-xl-6">
-              <div class="bg-secondary text-center rounded p-4">
+          <div class="row g-4">
+            <div class="col-sm-12 col-xl-6">
+              <div class="bg-secondary text-center rounded p-4 custom-shadow">
                 <div
                   class="d-flex align-items-center justify-content-between mb-4"
                 >
-                  <h6 class="mb-0">Contributors & Contribution</h6>
+                  <h6 class="mb-0">Loan Disbursed 2023</h6>
                   <i class="fa fa-handshake text-primary"></i>
                 </div>
-                <canvas id="salse-revenue"></canvas>
+                <canvas id="loans"></canvas>
               </div>
-            </div> -->
+            </div>
+            <div class="col-sm-12 col-xl-6">
+              <div class="bg-secondary text-center rounded p-4 custom-shadow">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-4"
+                >
+                  <h6 class="mb-0">Grant Disbursed 2023</h6>
+                  <i class="fa fa-handshake text-primary"></i>
+                </div>
+                <canvas id="grants"></canvas>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Sales Chart End -->

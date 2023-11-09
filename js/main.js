@@ -61,7 +61,7 @@
   Chart.defaults.borderColor = "#000000";
 
   // Worldwide Sales Chart
-  var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
+  var ctx1 = $("#contributions").get(0).getContext("2d");
   var myChart1 = new Chart(ctx1, {
     type: "bar",
     data: {
@@ -85,16 +85,6 @@
           data: [15, 30, 55, 65, 60, 80, 3000, 3197.5, 4560.5, 0, 0, 0],
           backgroundColor: "#7986cb",
         },
-        // {
-        //   label: "UK",
-        //   data: [8, 35, 40, 60, 70, 55, 75],
-        //   backgroundColor: "rgba(235, 22, 22, .5)",
-        // },
-        // {
-        //   label: "AU",
-        //   data: [12, 25, 45, 55, 65, 70, 60],
-        //   backgroundColor: "rgba(235, 22, 22, .3)",
-        // },
       ],
     },
     options: {
@@ -125,6 +115,69 @@
           label: "Contributor",
           data: [0, 0, 0, 0, 0, 0, 11, 9, 12, 0, 0, 0],
           backgroundColor: "#c388f6",
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+    },
+  });
+
+  //loans
+  var loans = $("#loans").get(0).getContext("2d");
+  var loanChart = new Chart(loans, {
+    type: "bar",
+    data: {
+      labels: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      datasets: [
+        {
+          label: "Loan",
+          data: [0, 0, 0, 0, 0, 0, 1100, 9000, 10000, 0, 0, 0],
+          backgroundColor: "#1ab394",
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+    },
+  });
+
+  var grants = $("#grants").get(0).getContext("2d");
+  var grantChart = new Chart(grants, {
+    type: "bar",
+    data: {
+      labels: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      datasets: [
+        {
+          label: "Grant",
+          data: [0, 0, 0, 0, 0, 0, 100, 900, 0, 0, 0, 0],
+          backgroundColor: "#67748c",
         },
       ],
     },
